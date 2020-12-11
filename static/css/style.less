@@ -49,7 +49,12 @@ body {
   padding: 2rem;
   margin: auto;
 
-  background: @nord6;
+  background-color: @nord6;
+  background-image: url("bg/0.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   color: @nord0;
 }
 
@@ -85,6 +90,9 @@ h1 {
     color: @nord7;
     font-size: 3rem;
     margin: 0;
+    a, a:visited {
+      color: @nord7;
+    }
   }
 }
 
@@ -105,6 +113,10 @@ a {
   &:active {
     color: @nord12;
   }
+  
+  &:visited {
+    color: @nord15;
+  }
 }
 
 hr {
@@ -115,6 +127,13 @@ hr {
 
 img {
   max-width: 100%;
+}
+
+aside, main {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.65);
+  padding: 0.5em 2em;
+  
+  background: rgba(255, 255, 255, 0.7);
 }
 
 aside {
@@ -135,7 +154,6 @@ aside {
 }
 
 main {
-
   article {
     div.article_listing {
       margin: 3rem 0 3rem 0;
@@ -218,18 +236,22 @@ table {
   }
 }
 
+pre {
+  white-space: pre-wrap;
+}
+
 pre.asciinema-terminal {
   font-family: FiraCode, monospace;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   main {
     position: absolute;
 
     top: 0;
-    right: 32%;
+    right: 30%;
 
-    max-width: 750px;
+    max-width: 900px;
     margin: 0 0 0 1rem;
 
     header {
@@ -257,8 +279,8 @@ pre.asciinema-terminal {
     top: 0;
     right: 0;
 
-    width: 25%;
-    height: 100%;
+    width: 22%;
+    //height: 100%;
 
     margin: 2rem;
 
