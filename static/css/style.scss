@@ -1,19 +1,19 @@
-@nord0: #2e3440;
-@nord1: #3b4252;
-@nord2: #434c5e;
-@nord3: #4c566a;
-@nord4: #d8dee9;
-@nord5: #e5e9f0;
-@nord6: #eceff4;
-@nord7: #8fbcbb;
-@nord8: #88c0d0;
-@nord9: #81a1c1;
-@nord10: #5e81ac;
-@nord11: #bf616a;
-@nord12: #d08770;
-@nord13: #ebcb8b;
-@nord14: #a3be8c;
-@nord15: #b48ead;
+$nord0: #2e3440;
+$nord1: #3b4252;
+$nord2: #434c5e;
+$nord3: #4c566a;
+$nord4: #d8dee9;
+$nord5: #e5e9f0;
+$nord6: #eceff4;
+$nord7: #8fbcbb;
+$nord8: #88c0d0;
+$nord9: #81a1c1;
+$nord10: #5e81ac;
+$nord11: #bf616a;
+$nord12: #d08770;
+$nord13: #ebcb8b;
+$nord14: #a3be8c;
+$nord15: #b48ead;
 
 @font-face {
   font-family: Enriqueta;
@@ -45,14 +45,14 @@ body {
   padding: 2rem;
   margin: auto;
 
-  background-color: @nord6;
+  background-color: $nord6;
   // See bg/COPYING file for licenses of images
   background-image: url("bg/my_ocean.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: @nord0;
+  color: $nord0;
 }
 
 h1,
@@ -60,6 +60,7 @@ h2,
 h3,
 h4,
 h5 {
+  font-family: Enriqueta;
   font-weight: normal;
   text-align: left;
 
@@ -79,46 +80,46 @@ h5 {
 }
 
 h1 {
-  color: @nord1;
+  color: $nord1;
   font-size: 1.75rem;
 
   &.sitename {
-    color: @nord7;
+    color: $nord7;
     font-size: 3rem;
     margin: 0;
     a, a:visited {
-      color: @nord7;
+      color: $nord7;
     }
   }
 }
 
 h2 {
-  color: @nord2;
+  color: $nord2;
   font-size: 1.50rem;
 }
 
 h3 {
-  color: @nord3;
+  color: $nord3;
   font-size: 1.25rem;
 }
 
 a {
-  color: @nord11;
+  color: $nord11;
 
   &:hover,
   &:active {
-    color: @nord12;
+    color: $nord12;
   }
   
   &:visited {
-    color: @nord15;
+    color: $nord15;
   }
 }
 
 hr {
   border: none;
   height: 1px;
-  background-color: @nord7;
+  background-color: $nord7;
 }
 
 img {
@@ -129,7 +130,7 @@ aside, main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.65);
   padding: 1em 2em;
   
-  background: rgba(@nord6, 0.8);
+  background: rgba($nord6, 0.8);
 }
 
 aside {
@@ -161,7 +162,7 @@ main {
 
     div.meta {
       font-size: 0.85rem;
-      color: @nord10;
+      color: $nord10;
 
       display: inline-block;
       width: 100%;
@@ -172,8 +173,8 @@ main {
     }
 
     blockquote {
-      background-color: @nord4;
-      color: @nord2;
+      background-color: $nord4;
+      color: $nord2;
       padding: 1rem;
       margin: 1rem 0 1rem 0;
 
@@ -211,7 +212,7 @@ main {
   }
 
   div.credits {
-    color: @nord10;
+    color: $nord10;
     font-size: 0.65rem;
   }
 }
@@ -224,11 +225,11 @@ table {
   td {
     border-style: solid;
     border-width: thin;
-    border-color: @nord4;
+    border-color: $nord4;
   }
 
   th {
-    color: @nord3;
+    color: $nord3;
   }
 }
 
