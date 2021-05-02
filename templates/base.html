@@ -153,7 +153,7 @@
             {% for category_name, articles_in_category in categories %}
                 <li>
                     <a href="{{ SITEURL }}/{{ category_name.url }}">
-                        {{ category_name | lower }} [{{ articles_in_category | count }}]
+                        {{ category_name  }} [{{ articles_in_category | count }}]
                     </a>
                 </li>
             {% endfor %}

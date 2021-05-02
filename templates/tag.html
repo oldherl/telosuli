@@ -1,7 +1,7 @@
 {% extends "index.html" %}
 
 {% block title %}
-{{ TUNDRA_TAG }}: {{ tag | lower }}
+{{ TUNDRA_TAG }}: {{ tag  }}
 {% endblock %}
 
 {% block head %}
@@ -20,7 +20,7 @@ title="{{ SITENAME }} {{ tag }} Tag RSS"/>
 
 {% block header %}
 
-<h1>{{ TUNDRA_TAG }}&nbsp;: {{ tag | lower }}
+<h1>{{ TUNDRA_TAG }}&nbsp;: {{ tag  }}
 
     {% if DISPLAY_SUB_FEEDS %}
 
