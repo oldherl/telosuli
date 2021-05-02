@@ -1,3 +1,7 @@
+# `tundra-oh`
+
+This is a fork of rwev/tundra theme for pelican. All the following is README from `tundra`, which might not apply here any more.
+
 # `tundra` 
 
 `tundra` is a [brutalist](https://brutalist-web.design/), [nord](https://nordtheme.com)ic theme for Python-based [Pelican](https://getpelican.com) static site generator. 
