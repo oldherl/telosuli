@@ -53,18 +53,14 @@
         {% if FEED_ALL_ATOM %}
 
             {{ TUNDRA_SEPARATION_STR }}
-            <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">
-                {{ TUNDRA_ATOM }}
-            </a>
+            <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">{{ TUNDRA_ATOM }}</a>
 
         {% endif %}
 
         {% if FEED_ALL_RSS %}
 
             {{ TUNDRA_SEPARATION_STR }}
-            <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">
-                {{ TUNDRA_RSS }}
-            </a>
+            <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">{{ TUNDRA_RSS }}</a>
         {% endif %}
 
         {% block header %}
