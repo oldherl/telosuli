@@ -2,22 +2,23 @@
 @use 'firamono';
 @use 'enriqueta';
 
-$nord0: #2e3440;
-$nord1: #3b4252;
-$nord2: #434c5e;
-$nord3: #4c566a;
-$nord4: #d8dee9;
-$nord5: #e5e9f0;
-$nord6: #eceff4;
-$nord7: #8fbcbb;
-$nord8: #88c0d0;
-$nord9: #81a1c1;
-$nord10: #5e81ac;
-$nord11: #bf616a;
-$nord12: #d08770;
-$nord13: #ebcb8b;
-$nord14: #a3be8c;
-$nord15: #b48ead;
+$nord_dark_1: #2e3440;
+$nord_dark_2: #3b4252;
+$nord_dark_3: #434c5e;
+$nord_dark_4: #4c566a;
+$nord_white_1: #d8dee9;
+$nord_white_2: #e5e9f0;
+$nord_white_3: #eceff4;
+$nord_blue_1: #8fbcbb;
+$nord_blue_2: #88c0d0;
+$nord_blue_3: #81a1c1;
+$nord_blue_4: #5e81ac;
+$nord_red: #bf616a;
+$nord_red_darker: #8a4c52;
+$nord_orange: #d08770;
+$nord_yellow: #ebcb8b;
+$nord_green: #a3be8c;
+$nord_purple: #b48ead;
 
 html {
   margin: 0;
@@ -34,14 +35,14 @@ body {
   padding: 2rem;
   margin: auto;
 
-  background-color: $nord6;
+  background-color: $nord_white_3;
   // See bg/COPYING file for licenses of images
   background-image: url("bg/my_ocean.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: $nord0;
+  color: $nord_dark_1;
 }
 
 h1,
@@ -58,7 +59,6 @@ h5 {
   }
 
   a {
-    color: inherit;
     text-decoration: none;
 
     &:hover,
@@ -69,46 +69,46 @@ h5 {
 }
 
 h1 {
-  color: $nord1;
+  color: $nord_dark_2;
   font-size: 1.75rem;
 
   &.sitename {
-    color: $nord7;
+    color: $nord_blue_1;
     font-size: 3rem;
     margin: 0;
     a, a:visited {
-      color: $nord7;
+      color: $nord_blue_1;
     }
   }
 }
 
 h2 {
-  color: $nord2;
+  color: $nord_dark_3;
   font-size: 1.50rem;
 }
 
 h3 {
-  color: $nord3;
+  color: $nord_dark_4;
   font-size: 1.25rem;
 }
 
 a {
-  color: $nord11;
+  color: $nord_red;
 
   &:hover,
   &:active {
-    color: $nord12;
+    color: $nord_orange;
   }
   
   &:visited {
-    color: $nord15;
+    color: $nord_red_darker;
   }
 }
 
 hr {
   border: none;
   height: 1px;
-  background-color: $nord7;
+  background-color: $nord_blue_1;
 }
 
 img {
@@ -119,7 +119,7 @@ aside, main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.65);
   padding: 1em 2em;
   
-  background: rgba($nord6, 0.8);
+  background: rgba($nord_white_3, 0.8);
 }
 
 aside {
@@ -151,7 +151,7 @@ main {
 
     div.meta {
       font-size: 0.85rem;
-      color: $nord10;
+      color: $nord_blue_4;
 
       display: inline-block;
       width: 100%;
@@ -162,8 +162,8 @@ main {
     }
 
     blockquote {
-      background-color: $nord4;
-      color: $nord2;
+      background-color: $nord_white_1;
+      color: $nord_dark_3;
       padding: 1rem;
       margin: 1rem 0 1rem 0;
 
@@ -201,7 +201,7 @@ main {
   }
 
   div.credits {
-    color: $nord10;
+    color: $nord_blue_4;
     font-size: 0.65rem;
   }
 }
@@ -214,11 +214,11 @@ table {
   td {
     border-style: solid;
     border-width: thin;
-    border-color: $nord4;
+    border-color: $nord_white_1;
   }
 
   th {
-    color: $nord3;
+    color: $nord_dark_4;
   }
 }
 
