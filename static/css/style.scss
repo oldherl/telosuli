@@ -212,11 +212,10 @@ table {
 
   th,
   td {
-    border-style: solid;
-    border-width: thin;
-    border-color: $nord_white_1;
+    border: 1px solid;
+    vertical-align: baseline;
+    padding: 0.5rem;
   }
-
   th {
     color: $nord_dark_4;
   }
