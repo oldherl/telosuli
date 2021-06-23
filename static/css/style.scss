@@ -1,56 +1,48 @@
-@nord0: #2e3440;
-@nord1: #3b4252;
-@nord2: #434c5e;
-@nord3: #4c566a;
-@nord4: #d8dee9;
-@nord5: #e5e9f0;
-@nord6: #eceff4;
-@nord7: #8fbcbb;
-@nord8: #88c0d0;
-@nord9: #81a1c1;
-@nord10: #5e81ac;
-@nord11: #bf616a;
-@nord12: #d08770;
-@nord13: #ebcb8b;
-@nord14: #a3be8c;
-@nord15: #b48ead;
+@use 'firasans';
+@use 'firamono';
+@use 'enriqueta';
 
-@font-face {
-  font-family: Bahnschrift;
-  src: url("./font/bahnschrift.ttf");
-}
-
-@font-face {
-  font-family: Enriqueta;
-  src: url("./font/enriqueta.ttf");
-}
-
-@font-face {
-  font-family: FiraSans;
-  src: url("./font/fira-sans.ttf");
-}
-
-@font-face {
-  font-family: FiraCode;
-  src: url("./font/fira-code.ttf");
-}
+$nord_dark_1: #2e3440;
+$nord_dark_2: #3b4252;
+$nord_dark_3: #434c5e;
+$nord_dark_4: #4c566a;
+$nord_white_1: #d8dee9;
+$nord_white_2: #e5e9f0;
+$nord_white_3: #eceff4;
+$nord_blue_1: #8fbcbb;
+$nord_blue_2: #88c0d0;
+$nord_blue_3: #81a1c1;
+$nord_blue_4: #5e81ac;
+$nord_red: #bf616a;
+$nord_red_darker: #8a4c52;
+$nord_orange: #d08770;
+$nord_yellow: #ebcb8b;
+$nord_green: #a3be8c;
+$nord_purple: #b48ead;
 
 html {
   margin: 0;
   padding: 0;
   text-align: left;
   text-rendering: optimizeLegibility;
+  font-size: 13pt;
 }
 
 body {
-  font-family: FiraSans;
+  font-family: "Fira Sans";
   font-size: 1rem;
 
   padding: 2rem;
   margin: auto;
 
-  background: @nord6;
-  color: @nord0;
+  background-color: $nord_white_3;
+  // See ../img/COPYING file for licenses of images
+  background-image: url("../img/my_ocean.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: $nord_dark_1;
 }
 
 h1,
@@ -58,16 +50,15 @@ h2,
 h3,
 h4,
 h5 {
+  font-family: Enriqueta;
   font-weight: normal;
   text-align: left;
-  font-family: Bahnschrift, sans-serif;
 
   span {
     color: inherit;
   }
 
   a {
-    color: inherit;
     text-decoration: none;
 
     &:hover,
@@ -78,43 +69,57 @@ h5 {
 }
 
 h1 {
-  color: @nord1;
+  color: $nord_dark_2;
   font-size: 1.75rem;
 
   &.sitename {
-    color: @nord7;
+    color: $nord_blue_1;
     font-size: 3rem;
     margin: 0;
+    a, a:visited {
+      color: $nord_blue_1;
+    }
   }
 }
 
 h2 {
-  color: @nord2;
+  color: $nord_dark_3;
   font-size: 1.50rem;
 }
 
 h3 {
-  color: @nord3;
+  color: $nord_dark_4;
   font-size: 1.25rem;
 }
 
 a {
-  color: @nord11;
+  color: $nord_red;
 
   &:hover,
   &:active {
-    color: @nord12;
+    color: $nord_orange;
+  }
+  
+  &:visited {
+    color: $nord_red_darker;
   }
 }
 
 hr {
   border: none;
   height: 1px;
-  background-color: @nord7;
+  background-color: $nord_blue_1;
 }
 
 img {
   max-width: 100%;
+}
+
+aside, main {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.65);
+  padding: 1em 2em;
+  
+  background: rgba($nord_white_3, 0.8);
 }
 
 aside {
@@ -135,7 +140,6 @@ aside {
 }
 
 main {
-
   article {
     div.article_listing {
       margin: 3rem 0 3rem 0;
@@ -147,7 +151,7 @@ main {
 
     div.meta {
       font-size: 0.85rem;
-      color: @nord10;
+      color: $nord_blue_4;
 
       display: inline-block;
       width: 100%;
@@ -158,8 +162,8 @@ main {
     }
 
     blockquote {
-      background-color: @nord4;
-      color: @nord2;
+      background-color: $nord_white_1;
+      color: $nord_dark_3;
       padding: 1rem;
       margin: 1rem 0 1rem 0;
 
@@ -171,7 +175,7 @@ main {
     }
 
     code {
-      font-family: FiraCode, monospace;
+      font-family: "Fira Mono", monospace;
     }
 
     code.inline {
@@ -197,7 +201,7 @@ main {
   }
 
   div.credits {
-    color: @nord10;
+    color: $nord_blue_4;
     font-size: 0.65rem;
   }
 }
@@ -210,30 +214,34 @@ table {
   td {
     border-style: solid;
     border-width: thin;
-    border-color: @nord4;
+    border-color: $nord_white_1;
   }
 
   th {
-    color: @nord3;
+    color: $nord_dark_4;
   }
 }
 
-pre.asciinema-terminal {
-  font-family: FiraCode, monospace;
+pre {
+  white-space: pre-wrap;
 }
 
-@media screen and (min-width: 768px) {
+pre.asciinema-terminal {
+  font-family: "Fira Mono", monospace;
+}
+
+@media screen and (min-width: 1000px) {
   main {
     position: absolute;
 
     top: 0;
-    right: 32%;
+    right: 30%;
 
-    max-width: 750px;
+    max-width: 900px;
     margin: 0 0 0 1rem;
 
     header {
-      margin: 2rem 0 2rem 0;
+      margin: 0.5rem 0 0.5rem 0;
     }
 
     footer {
@@ -257,8 +265,8 @@ pre.asciinema-terminal {
     top: 0;
     right: 0;
 
-    width: 25%;
-    height: 100%;
+    width: 22%;
+    //height: 100%;
 
     margin: 2rem;
 

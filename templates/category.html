@@ -1,7 +1,7 @@
 {% extends "index.html" %}
 
 {% block title %}
-{{ TUNDRA_CATEGORY }}: {{ category | lower }}
+{{ TUNDRA_CATEGORY }}: {{ category  }}
 {% endblock %}
 
 {% block head %}
@@ -27,12 +27,12 @@ rel="alternate" title="{{ SITENAME }} {{ category }} Category RSS"/>
     {% if category.ancestors %}
     {% for ancestor_category in category.ancestors[:-1] %}
     <a href="{{ SITEURL }}/{{ ancestor_category.url }}">
-        {{ ancestor_category.shortname | lower }}
+        {{ ancestor_category.shortname }}
     </a>
     &gt;
     {% endfor %}
     {% endif %}
-    {{ category.shortname}}
+    {{ category.shortname or cat }}
 
     {% if DISPLAY_SUB_FEEDS %}
 

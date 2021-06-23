@@ -11,12 +11,6 @@
     <meta name="description"
           content="Posts and writings by {{ AUTHOR }}">
 
-    <!-- client-side less
-            <link rel="stylesheet/less" type="text/css" href="{{ SITEURL }}/theme/css/style.less">
-            <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>
-            -->
-
-
     <link rel="stylesheet"
           type="text/css"
           href="{{ SITEURL }}/theme/css/style.css">
@@ -59,18 +53,14 @@
         {% if FEED_ALL_ATOM %}
 
             {{ TUNDRA_SEPARATION_STR }}
-            <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">
-                {{ TUNDRA_ATOM }}
-            </a>
+            <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">{{ TUNDRA_ATOM }}</a>
 
         {% endif %}
 
         {% if FEED_ALL_RSS %}
 
             {{ TUNDRA_SEPARATION_STR }}
-            <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">
-                {{ TUNDRA_RSS }}
-            </a>
+            <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">{{ TUNDRA_RSS }}</a>
         {% endif %}
 
         {% block header %}
@@ -127,12 +117,12 @@
     <h3> {{ TUNDRA_BLOG }} </h3>
     <ul>
         <li>
-            <a href="{{ SITEURL }}/categories">
+            <a href="{{ SITEURL }}/categories.html">
                 {{ TUNDRA_CATEGORIES }} [{{ categories | count }}]
             </a>
         </li>
         <li>
-            <a href="{{ SITEURL }}/tags">
+            <a href="{{ SITEURL }}/tags.html">
                 {{ TUNDRA_TAGS }} [{{ tags | count }}]
             </a>
         </li>
@@ -159,7 +149,7 @@
             {% for category_name, articles_in_category in categories %}
                 <li>
                     <a href="{{ SITEURL }}/{{ category_name.url }}">
-                        {{ category_name | lower }} [{{ articles_in_category | count }}]
+                        {{ category_name  }} [{{ articles_in_category | count }}]
                     </a>
                 </li>
             {% endfor %}
@@ -182,9 +172,10 @@
     {% endif %}
 </aside>
 
+{% if GOATCOUNTER_URL %}
 <script>
     (function() {
-        window.counter = 'https://rwev.goatcounter.com/count'
+        window.counter = GOATCOUNTER_URL
 
         var script = document.createElement('script');
         script.async = 1;
@@ -194,6 +185,7 @@
         ins.parentNode.insertBefore(script, ins)
     })();
 </script>
+{% endif %}
 
 </body>
 </html>

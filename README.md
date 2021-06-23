@@ -1,3 +1,11 @@
+# `tundra-oh`
+
+This is a fork of [`rwev/tundra`](https://gitlab.com/rwev/tundra) theme for pelican. 
+
+I like the simple design of it, but I don't like the cold, icy color, and have changed it to a more vibrant yet still clean color and applied an ocean background image.
+
+All the following is the README from the original `tundra`, which might not apply here any more.
+
 # `tundra` 
 
 `tundra` is a [brutalist](https://brutalist-web.design/), [nord](https://nordtheme.com)ic theme for Python-based [Pelican](https://getpelican.com) static site generator. 

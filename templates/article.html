@@ -31,7 +31,7 @@
                     {{ TUNDRA_CATEGORY }}:
                     {% for category in article.category.ancestors or [article.category] %}
                         <a href="{{ SITEURL }}/{{ category.url }}">
-                            {{ category.shortname or category | lower }}
+                            {{ category.shortname or category }}
                         </a>
                         {{ ' &gt;' if not loop.last }}
                     {% endfor %}
@@ -44,7 +44,7 @@
                         {% for tag in article.tags %}
 
                             <a href="{{ SITEURL }}/{{ tag.url }}">
-                                {{ tag | lower }}
+                                {{ tag  }}
                             </a>
 
                             {% if not loop.last %}

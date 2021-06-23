@@ -15,13 +15,13 @@
                     {% if category.ancestors %}
                         {% for ancestor_category in category.ancestors[:-1] %}
 
-                            <span>{{ ancestor_category.shortname | lower }}</span>
+                            <span>{{ ancestor_category.shortname or cat }}</span>
                             &gt;
 
                         {% endfor %}
                     {% endif %}
 
-                    <a href="{{ SITEURL }}/{{ category.url }}">{{ category.shortname | lower }}</a>
+                    <a href="{{ SITEURL }}/{{ category.url }}">{{ category.shortname or category }}</a>
 
                     <span>[{{ articles|count }} {{ TUNDRA_ARTICLES }}]</span>
 
