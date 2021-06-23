@@ -78,10 +78,12 @@
         <hr>
         <p>&copy; {{ OWNER }}. built using <a href="https://python.org">python</a> and <a href="https://getpelican.com"
                                                                                           target="_blank">pelican</a>.
-           theme inspired by <a href="https://nordtheme.com"
+           <a href="{{ THEME_URL }}" target="_blank">theme</a> inspired by <a href="https://nordtheme.com"
                                 target="_blank">nord</a>.
+    {% if SOURCE_CODE_URL %}
             source code <a href="{{ SOURCE_CODE_URL }}"
                            target="_blank">here</a>.
+    {% endif %}
         </p>
     </div>
 </main>

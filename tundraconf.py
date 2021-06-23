@@ -110,6 +110,8 @@ TUNDRA_MODIFIED = "modified"
 TUNDRA_ATOM = "atom"
 TUNDRA_RSS = "rss"
 
+THEME_URL = "https://github.com/oldherl/tundra-oh"
+
 # FORMATTING / FEED GENERATION
 
 DEFAULT_DATE_FORMAT = "%Y-%m-%d %H:%M"  # big
