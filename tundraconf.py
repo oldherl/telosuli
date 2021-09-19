@@ -36,7 +36,8 @@ PLUGINS = [
     "neighbors",
     "more_categories",
     "photos",
-    "summary"
+    "summary",
+    "read_more",
 ]
 
 # autopages
