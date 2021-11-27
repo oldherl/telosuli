@@ -1,16 +1,12 @@
 # `tundra-oh`
 
-This is a fork of [`rwev/tundra`](https://gitlab.com/rwev/tundra) theme for pelican. 
+This was a fork of [`rwev/tundra`](https://gitlab.com/rwev/tundra) theme for [Pelican](https://getpelican.com). I like the simple design of it, but I don't like the cold, icy color, and have changed it to a more vibrant yet still clean color and applied an ocean background image.
 
-I like the simple design of it, but I don't like the cold, icy color, and have changed it to a more vibrant yet still clean color and applied an ocean background image.
+As of Oct 2021, the upstream has [reset the history](https://gitlab.com/rwev/tundra/-/commit/c38f140527abd5dc6dc36d935a58a5ece5669cab) for no reason. So I have lost the ability and motivation to contribute any patches upstream. From now on, it would be an independent project.
 
 All the following is the README from the original `tundra`, which might not apply here any more.
 
 # `tundra` 
-
-`tundra` is a [brutalist](https://brutalist-web.design/), [nord](https://nordtheme.com)ic theme for Python-based [Pelican](https://getpelican.com) static site generator. 
-
-See my development blog [rwev.dev](https://rwev.dev) to see `tundra` in action
 
 ## configuration
 
@@ -40,8 +36,3 @@ Overwrite any of the variables in your `pelicanconf.py` after this import, wheth
 - [summary](https://github.com/getpelican/pelican-plugins/tree/master/summary)
 - [clean_summary](https://github.com/getpelican/pelican-plugins/tree/master/summary)
 
-## TODO
-- [ ] integrate plugins
-    - [ ] [sitemap](https://github.com/getpelican/pelican-plugins/tree/master/sitemap) 
-    - [ ] [deadlinks](https://github.com/silentlamb/pelican-deadlinks/tree/8b49b594591ded55ba20b74c54c12a566fe8e9cc) 
-    - [ ] [ave_seo](https://github.com/MaevaBrunelles/ave_seo)
