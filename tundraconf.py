@@ -31,13 +31,13 @@ RELATIVE_URLS = True
 
 PLUGIN_PATHS = ["pelican-plugins"]
 PLUGINS = [
-    "autopages",
-    "similar_posts",
+    #"autopages",
+    #"similar_posts",
     "neighbors",
-    "more_categories",
+    #"more_categories",
     "photos",
     "summary",
-    "read_more",
+    "pelican.plugins.read_more",
 ]
 
 # autopages
