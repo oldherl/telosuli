@@ -34,7 +34,7 @@
 
     <title>
         {{ SITENAME }}
-        {{ TUNDRA_SEPARATION_STR }}
+        {{ TELOSULI_SEPARATION_STR }}
         {% block title %}
         {% endblock %}
     </title>
@@ -44,20 +44,20 @@
 <body>
 <main>
     <header>
-        <a href="{{ SITEURL }}">{{ TUNDRA_HOME }}</a> {{ TUNDRA_SEPARATION_STR }}<a
-            href="{{ SITEURL }}/archives.html">{{ TUNDRA_ARCHIVES }}</a>
+        <a href="{{ SITEURL }}">{{ TELOSULI_HOME }}</a> {{ TELOSULI_SEPARATION_STR }}<a
+            href="{{ SITEURL }}/archives.html">{{ TELOSULI_ARCHIVES }}</a>
 
         {% if FEED_ALL_ATOM %}
 
-            {{ TUNDRA_SEPARATION_STR }}
-            <a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}">{{ TUNDRA_ATOM }}</a>
+            {{ TELOSULI_SEPARATION_STR }}
+            <a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}">{{ TELOSULI_ATOM }}</a>
 
         {% endif %}
 
         {% if FEED_ALL_RSS %}
 
-            {{ TUNDRA_SEPARATION_STR }}
-            <a href="{{ SITEURL }}/{{ FEED_ALL_RSS }}">{{ TUNDRA_RSS }}</a>
+            {{ TELOSULI_SEPARATION_STR }}
+            <a href="{{ SITEURL }}/{{ FEED_ALL_RSS }}">{{ TELOSULI_RSS }}</a>
         {% endif %}
 
         {% block header %}
@@ -102,7 +102,7 @@
     <h4 class="tagline">{{ TAGLINE }}</h4>
 
     {% if DISPLAY_PAGES_ON_MENU %}
-        <h3>{{ TUNDRA_PAGES }}</h3>
+        <h3>{{ TELOSULI_PAGES }}</h3>
         <ul>
             {% for p in pages %}
                 <li>
@@ -113,22 +113,22 @@
         </ul>
     {% endif %}
 
-    <h3> {{ TUNDRA_BLOG }} </h3>
+    <h3> {{ TELOSULI_BLOG }} </h3>
     <ul>
         <li>
             <a href="{{ SITEURL }}/categories.html">
-                {{ TUNDRA_CATEGORIES }} [{{ categories | count }}]
+                {{ TELOSULI_CATEGORIES }} [{{ categories | count }}]
             </a>
         </li>
         <li>
             <a href="{{ SITEURL }}/tags.html">
-                {{ TUNDRA_TAGS }} [{{ tags | count }}]
+                {{ TELOSULI_TAGS }} [{{ tags | count }}]
             </a>
         </li>
     </ul>
 
     {% if DISPLAY_LINKS_ON_MENU %}
-        <h3>{{ TUNDRA_LINKS }}</h3>
+        <h3>{{ TELOSULI_LINKS }}</h3>
         <ul>
             {% for label, name, link in LINK_ITEMS %}
                 <li>
@@ -143,7 +143,7 @@
     {% endif %}
 
     {% if DISPLAY_CATEGORIES_ON_MENU %}
-        <h3>{{ TUNDRA_CATEGORIES }}</h3>
+        <h3>{{ TELOSULI_CATEGORIES }}</h3>
         <ul>
             {% for category_name, articles_in_category in categories %}
                 <li>
@@ -157,7 +157,7 @@
 
     <!-- TODO move along bottom edge of sidebar - add icons -->
     {% if DISPLAY_SOCIAL_ON_MENU %}
-        <h3>{{ TUNDRA_SOCIAL }}</h3>
+        <h3>{{ TELOSULI_SOCIAL }}</h3>
         <ul>
             {% for name, link in SOCIAL %}
                 <li>

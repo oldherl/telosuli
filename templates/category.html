@@ -1,7 +1,7 @@
 {% extends "index.html" %}
 
 {% block title %}
-{{ TUNDRA_CATEGORY }}: {{ category  }}
+{{ TELOSULI_CATEGORY }}: {{ category  }}
 {% endblock %}
 
 {% block head %}
@@ -22,7 +22,7 @@ rel="alternate" title="{{ SITENAME }} {{ category }} Category RSS"/>
 
 {% block header %}
 
-<h1>{{ TUNDRA_CATEGORY }}&nbsp;:
+<h1>{{ TELOSULI_CATEGORY }}&nbsp;:
 
     {% if category.ancestors %}
     {% for ancestor_category in category.ancestors[:-1] %}
@@ -38,13 +38,13 @@ rel="alternate" title="{{ SITENAME }} {{ category }} Category RSS"/>
 
     {% if CATEGORY_FEED_ATOM %}
     <a href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|replace("{slug}", category.slug) }}">
-    [{{ TUNDRA_ATOM }}]
+    [{{ TELOSULI_ATOM }}]
     </a>
     {% endif %}
 
     {% if CATEGORY_FEED_RSS %}
     <a href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|replace("{slug}", category.slug) }}">
-    [{{ TUNDRA_RSS }}]
+    [{{ TELOSULI_RSS }}]
     </a>
     {% endif %}
 

@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 
 {% block title %}
-    {{ TUNDRA_ARCHIVES }}
+    {{ TELOSULI_ARCHIVES }}
 {% endblock %}
 
 {% block content %}
     <article>
-        <h1>{{ TUNDRA_ARCHIVES }} </h1>
+        <h1>{{ TELOSULI_ARCHIVES }} </h1>
 
         {% for article in dates %}
             <p>
-                {{ article.locale_date }} {{ TUNDRA_SEPARATION_STR }}
+                {{ article.locale_date }} {{ TELOSULI_SEPARATION_STR }}
 
                 <a href="{{ SITEURL }}/{{ article.url }}">
                     {{ article.title }}

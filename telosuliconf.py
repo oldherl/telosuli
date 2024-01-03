@@ -23,7 +23,7 @@ SOCIAL = ()
 
 # CONFIGURATIONS FOR PELICAN BUILD PROCESS
 
-THEME = "tundra"
+THEME = "telosuli"
 
 # PLUGINS
 
@@ -68,48 +68,48 @@ SUMMARY_USE_FIRST_PARAGRAPH = True
 # GOATCOUNTER_URL = 'https://rwev.goatcounter.com/count'
 GOATCOUNTER_URL = ''
 
-# CONFIGURATIONS FOR TUNDRA STATIC APPEARANCE (NOT USED BY PELICAN)
+# CONFIGURATIONS FOR TELOSULI STATIC APPEARANCE (NOT USED BY PELICAN)
 
-TUNDRA_SEPARATION_STR = " // "
+TELOSULI_SEPARATION_STR = " // "
 
-TUNDRA_SOCIAL = "social"
+TELOSULI_SOCIAL = "social"
 
-TUNDRA_HOME = "home"
+TELOSULI_HOME = "home"
 
-TUNDRA_BLOG = "blog"
-TUNDRA_PAGES = "pages"
-TUNDRA_LINKS = "links"
+TELOSULI_BLOG = "blog"
+TELOSULI_PAGES = "pages"
+TELOSULI_LINKS = "links"
 
-TUNDRA_ARCHIVES = "archives"
-TUNDRA_SIMILAR_ARTICLES = "similar articles"
+TELOSULI_ARCHIVES = "archives"
+TELOSULI_SIMILAR_ARTICLES = "similar articles"
 
-TUNDRA_AUTHOR = "author"
-TUNDRA_AUTHORS = "authors"
-TUNDRA_AUTHOR_S = "author(s)"
+TELOSULI_AUTHOR = "author"
+TELOSULI_AUTHORS = "authors"
+TELOSULI_AUTHOR_S = "author(s)"
 
-TUNDRA_CATEGORY = "category"
-TUNDRA_CATEGORIES = "categories"
+TELOSULI_CATEGORY = "category"
+TELOSULI_CATEGORIES = "categories"
 
-TUNDRA_ARTICLES = "articles"
+TELOSULI_ARTICLES = "articles"
 
-TUNDRA_GALLERY = "gallery"
+TELOSULI_GALLERY = "gallery"
 
-TUNDRA_TAG = "tag"
-TUNDRA_TAGS = "tags"
+TELOSULI_TAG = "tag"
+TELOSULI_TAGS = "tags"
 
-TUNDRA_PREVIOUS = "prev"
-TUNDRA_NEXT = "next"
+TELOSULI_PREVIOUS = "prev"
+TELOSULI_NEXT = "next"
 
-TUNDRA_NEWER = "newer"
-TUNDRA_OLDER = "older"
+TELOSULI_NEWER = "newer"
+TELOSULI_OLDER = "older"
 
-TUNDRA_POSTED = "posted"
-TUNDRA_MODIFIED = "modified"
+TELOSULI_POSTED = "posted"
+TELOSULI_MODIFIED = "modified"
 
-TUNDRA_ATOM = "atom"
-TUNDRA_RSS = "rss"
+TELOSULI_ATOM = "atom"
+TELOSULI_RSS = "rss"
 
-THEME_URL = "https://github.com/oldherl/tundra-oh"
+THEME_URL = "https://github.com/oldherl/telosuli"
 
 # FORMATTING / FEED GENERATION
 

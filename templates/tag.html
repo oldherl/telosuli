@@ -1,7 +1,7 @@
 {% extends "index.html" %}
 
 {% block title %}
-{{ TUNDRA_TAG }}: {{ tag  }}
+{{ TELOSULI_TAG }}: {{ tag  }}
 {% endblock %}
 
 {% block head %}
@@ -20,19 +20,19 @@ title="{{ SITENAME }} {{ tag }} Tag RSS"/>
 
 {% block header %}
 
-<h1>{{ TUNDRA_TAG }}&nbsp;: {{ tag  }}
+<h1>{{ TELOSULI_TAG }}&nbsp;: {{ tag  }}
 
     {% if DISPLAY_SUB_FEEDS %}
 
     {% if TAG_FEED_ATOM %}
     <a href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|replace("{slug}", tag.slug) }}">
-    [{{ TUNDRA_ATOM }}]
+    [{{ TELOSULI_ATOM }}]
     </a>
     {% endif %}
 
     {% if TAG_FEED_RSS %}
     <a href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|replace("{slug}", tag.slug) }}">
-    [{{ TUNDRA_RSS }}]
+    [{{ TELOSULI_RSS }}]
     </a>
     {% endif %}
 
