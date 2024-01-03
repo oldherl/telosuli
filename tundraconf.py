@@ -7,7 +7,6 @@ OWNER = ""
 AUTHOR = ""
 
 SITENAME = ""
-SITEURL = "localhost:8000"
 
 SOURCE_CODE_URL = ""
 
@@ -25,7 +24,6 @@ SOCIAL = ()
 # CONFIGURATIONS FOR PELICAN BUILD PROCESS
 
 THEME = "tundra"
-RELATIVE_URLS = True
 
 # PLUGINS
 
