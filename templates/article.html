@@ -16,7 +16,7 @@
         <div class="meta">
             <div class="spread">
                 <p>
-                    {{ TELOSULI_AUTHOR_S }}:
+                    {{ TELOSULI.AUTHOR_S }}:
                     {% for author in article.authors %}
                         <a href="{{ SITEURL }}/{{ author.url }}">
                             {{ author }}
@@ -28,7 +28,7 @@
                 </p>
 
                 <p>
-                    {{ TELOSULI_CATEGORY }}:
+                    {{ TELOSULI.CATEGORY }}:
                     {% for category in article.category.ancestors or [article.category] %}
                         <a href="{{ SITEURL }}/{{ category.url }}">
                             {{ category.shortname or category }}
@@ -39,7 +39,7 @@
 
                 <p>
                     {% if article.tags %}
-                        {{ TELOSULI_TAGS }}:
+                        {{ TELOSULI.TAGS }}:
 
                         {% for tag in article.tags %}
 
@@ -60,8 +60,8 @@
             </div>
 
             <div class="spread right">
-                <p>{{ TELOSULI_POSTED }}: {{ article.locale_date }}</p>
-                <p>{{ TELOSULI_MODIFIED }}: {{ article.locale_modified }}</p>
+                <p>{{ TELOSULI.POSTED }}: {{ article.locale_date }}</p>
+                <p>{{ TELOSULI.MODIFIED }}: {{ article.locale_modified }}</p>
             </div>
 
         </div>
@@ -71,7 +71,7 @@
         {% if article.photo_gallery %}
             {% for title, gallery in article.photo_gallery %}
 
-                <h3>{{ TELOSULI_GALLERY }}: {{ title }}</h3>
+                <h3>{{ TELOSULI.GALLERY }}: {{ title }}</h3>
                 <div class="gallery">
                     {% for name, photo, thumb, exif, caption in gallery %}
                         <figure>
@@ -100,7 +100,7 @@
                     <div class="spread">
                         <p>
                             &lt;
-                            {{ TELOSULI_PREVIOUS }}
+                            {{ TELOSULI.PREVIOUS }}
                             <a href="{{ SITEURL }}/{{ article.prev_article.url }}">
                                 {{ article.prev_article.title }}
                             </a>
@@ -111,7 +111,7 @@
                 {% if article.next_article %}
                     <div class="spread right">
                         <p>
-                            {{ TELOSULI_NEXT }}
+                            {{ TELOSULI.NEXT }}
                             <a href="{{ SITEURL }}/{{ article.next_article.url }}">
                                 {{ article.next_article.title }}
                             </a>
@@ -128,7 +128,7 @@
             <div class="meta">
 
                 <p>
-                    {{ TELOSULI_SIMILAR_ARTICLES }}:
+                    {{ TELOSULI.SIMILAR_ARTICLES }}:
                 </p>
                 <ul>
                     {% for similar in article.similar_posts %}

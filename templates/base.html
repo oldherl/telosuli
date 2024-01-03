@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% import 'config.html' as TELOSULI %}
 <html lang="{{ DEFAULT_LANG }}">
 
 <head>
@@ -34,7 +35,7 @@
 
     <title>
         {{ SITENAME }}
-        {{ TELOSULI_SEPARATION_STR }}
+        {{ TELOSULI.SEPARATION_STR }}
         {% block title %}
         {% endblock %}
     </title>
@@ -44,20 +45,20 @@
 <body>
 <main>
     <header>
-        <a href="{{ SITEURL }}">{{ TELOSULI_HOME }}</a> {{ TELOSULI_SEPARATION_STR }}<a
-            href="{{ SITEURL }}/archives.html">{{ TELOSULI_ARCHIVES }}</a>
+        <a href="{{ SITEURL }}">{{ TELOSULI.HOME }}</a> {{ TELOSULI.SEPARATION_STR }}<a
+            href="{{ SITEURL }}/archives.html">{{ TELOSULI.ARCHIVES }}</a>
 
         {% if FEED_ALL_ATOM %}
 
-            {{ TELOSULI_SEPARATION_STR }}
-            <a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}">{{ TELOSULI_ATOM }}</a>
+            {{ TELOSULI.SEPARATION_STR }}
+            <a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}">{{ TELOSULI.ATOM }}</a>
 
         {% endif %}
 
         {% if FEED_ALL_RSS %}
 
-            {{ TELOSULI_SEPARATION_STR }}
-            <a href="{{ SITEURL }}/{{ FEED_ALL_RSS }}">{{ TELOSULI_RSS }}</a>
+            {{ TELOSULI.SEPARATION_STR }}
+            <a href="{{ SITEURL }}/{{ FEED_ALL_RSS }}">{{ TELOSULI.RSS }}</a>
         {% endif %}
 
         {% block header %}
@@ -73,13 +74,10 @@
 
     <div class="credits">
         <hr>
-        <p>&copy; {{ OWNER }}. built using <a href="https://python.org">python</a> and <a href="https://getpelican.com"
-                                                                                          target="_blank">pelican</a>.
-           <a href="{{ THEME_URL }}" target="_blank">theme</a> inspired by <a href="https://nordtheme.com"
-                                target="_blank">nord</a>.
+        <p>&copy; {{ OWNER }}. built using <a href="https://python.org">python</a> and <a href="https://getpelican.com" target="_blank">pelican</a>.
+        <a href="{{ TELOSULI.THEME_URL }}" target="_blank">telosuli</a> theme inspired by <a href="https://nordtheme.com" target="_blank">nord</a>.
     {% if SOURCE_CODE_URL %}
-            source code <a href="{{ SOURCE_CODE_URL }}"
-                           target="_blank">here</a>.
+            source code <a href="{{ SOURCE_CODE_URL }}" target="_blank">here</a>.
     {% endif %}
         </p>
     </div>
@@ -102,7 +100,7 @@
     <h4 class="tagline">{{ TAGLINE }}</h4>
 
     {% if DISPLAY_PAGES_ON_MENU %}
-        <h3>{{ TELOSULI_PAGES }}</h3>
+        <h3>{{ TELOSULI.PAGES }}</h3>
         <ul>
             {% for p in pages %}
                 <li>
@@ -113,22 +111,22 @@
         </ul>
     {% endif %}
 
-    <h3> {{ TELOSULI_BLOG }} </h3>
+    <h3> {{ TELOSULI.BLOG }} </h3>
     <ul>
         <li>
             <a href="{{ SITEURL }}/categories.html">
-                {{ TELOSULI_CATEGORIES }} [{{ categories | count }}]
+                {{ TELOSULI.CATEGORIES }} [{{ categories | count }}]
             </a>
         </li>
         <li>
             <a href="{{ SITEURL }}/tags.html">
-                {{ TELOSULI_TAGS }} [{{ tags | count }}]
+                {{ TELOSULI.TAGS }} [{{ tags | count }}]
             </a>
         </li>
     </ul>
 
     {% if DISPLAY_LINKS_ON_MENU %}
-        <h3>{{ TELOSULI_LINKS }}</h3>
+        <h3>{{ TELOSULI.LINKS }}</h3>
         <ul>
             {% for label, name, link in LINK_ITEMS %}
                 <li>
@@ -143,7 +141,7 @@
     {% endif %}
 
     {% if DISPLAY_CATEGORIES_ON_MENU %}
-        <h3>{{ TELOSULI_CATEGORIES }}</h3>
+        <h3>{{ TELOSULI.CATEGORIES }}</h3>
         <ul>
             {% for category_name, articles_in_category in categories %}
                 <li>
@@ -157,7 +155,7 @@
 
     <!-- TODO move along bottom edge of sidebar - add icons -->
     {% if DISPLAY_SOCIAL_ON_MENU %}
-        <h3>{{ TELOSULI_SOCIAL }}</h3>
+        <h3>{{ TELOSULI.SOCIAL }}</h3>
         <ul>
             {% for name, link in SOCIAL %}
                 <li>

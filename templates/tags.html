@@ -1,17 +1,17 @@
 {% extends "base.html" %}
 
 {% block title %}
-    {{ TELOSULI_TAGS }}
+    {{ TELOSULI.TAGS }}
 {% endblock %}
 
 {% block content %}
     <article>
-        <h1>{{ TELOSULI_TAGS }}</h1>
+        <h1>{{ TELOSULI.TAGS }}</h1>
         <ul>
             {%- for tag, articles in tags|sort %}
                 <li>
                     <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag  }}</a>
-                    <span>[{{ articles|count }} {{ TELOSULI_ARTICLES }}]</span>
+                    <span>[{{ articles|count }} {{ TELOSULI.ARTICLES }}]</span>
 
                     {% if tag.page %}
                         <p>{{ tag.page.content }}</p>

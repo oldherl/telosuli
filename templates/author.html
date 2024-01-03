@@ -1,7 +1,7 @@
 {% extends "index.html" %}
 
 {% block title %}
-{{ TELOSULI_AUTHOR_S }}: {{ author }}
+{{ TELOSULI.AUTHOR_S }}: {{ author }}
 {% endblock %}
 
 {% block head %}
@@ -20,7 +20,7 @@ rel="alternate" title="{{ SITENAME }} {{ author }} Author RSS"/>
 
 {% block header %}
 
-<h1> {{ TELOSULI_AUTHOR }}: {{ author }} </h1>
+<h1> {{ TELOSULI.AUTHOR }}: {{ author }} </h1>
 
 {% if author.page %}
 {{ author.page.content }}

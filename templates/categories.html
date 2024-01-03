@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 
 {% block title %}
-    {{ TELOSULI_CATEGORIES }}
+    {{ TELOSULI.CATEGORIES }}
 {% endblock %}
 
 {% block content %}
     <article>
-        <h1>{{ TELOSULI_CATEGORIES }}</h1>
+        <h1>{{ TELOSULI.CATEGORIES }}</h1>
         <ul>
 
             {% for category, articles in categories|sort %}
@@ -23,7 +23,7 @@
 
                     <a href="{{ SITEURL }}/{{ category.url }}">{{ category.shortname or category }}</a>
 
-                    <span>[{{ articles|count }} {{ TELOSULI_ARTICLES }}]</span>
+                    <span>[{{ articles|count }} {{ TELOSULI.ARTICLES }}]</span>
 
                     {% if category.page %}
                         <p>{{ category.page.content }}</p>
