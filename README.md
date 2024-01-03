@@ -10,6 +10,7 @@ The name comes from "telo suli" in Toki Pona, which could mean "a big water body
 
 ## live demo
 I am using it on my blog, [Hydroxide](https://blog.oldherl.one/).
+![telosuli-screenshot-1000](https://github.com/oldherl/telosuli/assets/172495/9625b4f7-71a1-458a-95c6-b08c67d6813d)
 
 ## installation
 
